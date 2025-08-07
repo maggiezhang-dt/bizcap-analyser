@@ -1,0 +1,4 @@
+gunicorn
+gspread
+pandas
+google-auth
