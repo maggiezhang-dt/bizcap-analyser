@@ -37,7 +37,7 @@ def handle_request():
     # Set OPPORTUNITIES_SHEET_NAME and OPPORTUNITIES_WORKSHEET_NAME
     # when you run or deploy this application.
     sheet_name = os.getenv("CAPABILITIES_SHEET_NAME")
-    worksheet_name = os.getenv("2025_Closed_Won_11_Jun_2025")
+    worksheet_name = os.getenv("CAPABILITIES_WORKSHEET_NAME", "2025_Closed_Won_11_Jun_2025")
 
     if not sheet_name:
         return "Error: Capabilities & Case Studies environment variable not set.", 500
