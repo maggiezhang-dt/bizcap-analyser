@@ -36,8 +36,8 @@ def handle_request():
     # Configuration is read from environment variables.
     # Set OPPORTUNITIES_SHEET_NAME and OPPORTUNITIES_WORKSHEET_NAME
     # when you run or deploy this application.
-    sheet_name = os.getenv("Capabilities & Case Studies")
-    worksheet_name = os.getenv("2025 Closed Won - 11 Jun 2025", "Sheet1")
+    sheet_name = os.getenv("CAPABILITIES_SHEET_NAME")
+    worksheet_name = os.getenv("2025_Closed_Won_11_Jun_2025", "Sheet1")
 
     if not sheet_name:
         return "Error: Capabilities & Case Studies environment variable not set.", 500
